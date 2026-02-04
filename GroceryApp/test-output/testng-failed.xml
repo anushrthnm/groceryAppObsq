@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel Test Test]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="testScripts.loginTestCasrPageFact">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="invalidLogin"/>
+          <include name="setUp"/>
+          <include name="brwsrInit"/>
+        </methods>
+      </class> <!-- testScripts.loginTestCasrPageFact -->
+      <class name="testScripts.ManageCategoryTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="setUp"/>
+          <include name="brwsrInit"/>
+          <include name="manageCategoryTest"/>
+        </methods>
+      </class> <!-- testScripts.ManageCategoryTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="testScripts.loginTestCasrPageFact">
+        <methods>
+          <include name="invalidLogin"/>
+          <include name="browserQuit"/>
+          <include name="setUp"/>
+          <include name="brwsrInit"/>
+        </methods>
+      </class> <!-- testScripts.loginTestCasrPageFact -->
+      <class name="testScripts.ManageCategoryTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="setUp"/>
+          <include name="brwsrInit"/>
+          <include name="manageCategoryTest"/>
+        </methods>
+      </class> <!-- testScripts.ManageCategoryTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Parallel Test Test] -->

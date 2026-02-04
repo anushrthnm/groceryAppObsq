@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="16" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-03T15:35:35 IST" name="Parallel Test Test" finished-at="2026-02-03T15:37:13 IST" duration-ms="98741">
+    <groups>
+    </groups>
+    <test started-at="2026-02-03T15:35:35 IST" name="Test1" finished-at="2026-02-03T15:37:02 IST" duration-ms="87578">
+      <class name="testScripts.manageFooterText">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.manageFooterText@548a24a]" started-at="2026-02-03T15:36:17 IST" name="brwsrInit" finished-at="2026-02-03T15:36:20 IST" duration-ms="3184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method signature="manageFooter()[pri:0, instance:testScripts.manageFooterText@548a24a]" started-at="2026-02-03T15:36:20 IST" name="manageFooter" finished-at="2026-02-03T15:36:24 IST" duration-ms="3746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageFooter -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.manageFooterText@548a24a]" started-at="2026-02-03T15:36:20 IST" name="setUp" finished-at="2026-02-03T15:36:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.manageFooterText@548a24a]" started-at="2026-02-03T15:36:24 IST" name="browserQuit" finished-at="2026-02-03T15:36:24 IST" duration-ms="503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageFooter status=SUCCESS method=manageFooterText.manageFooter()[pri:0, instance:testScripts.manageFooterText@548a24a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.manageFooterText -->
+      <class name="testScripts.LogoutTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.LogoutTest@3f4faf53]" started-at="2026-02-03T15:36:57 IST" name="brwsrInit" finished-at="2026-02-03T15:37:00 IST" duration-ms="3165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.LogoutTest@3f4faf53]" started-at="2026-02-03T15:37:00 IST" name="setUp" finished-at="2026-02-03T15:37:00 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoutTest()[pri:0, instance:testScripts.LogoutTest@3f4faf53]" started-at="2026-02-03T15:37:00 IST" name="logoutTest" finished-at="2026-02-03T15:37:02 IST" duration-ms="2103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LogoutTest@3f4faf53]" started-at="2026-02-03T15:37:02 IST" name="browserQuit" finished-at="2026-02-03T15:37:02 IST" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logoutTest status=SUCCESS method=LogoutTest.logoutTest()[pri:0, instance:testScripts.LogoutTest@3f4faf53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.LogoutTest -->
+      <class name="testScripts.manageNewsPageTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.manageNewsPageTest@1040be71]" started-at="2026-02-03T15:36:07 IST" name="brwsrInit" finished-at="2026-02-03T15:36:13 IST" duration-ms="5640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.manageNewsPageTest@1040be71]" started-at="2026-02-03T15:36:13 IST" name="setUp" finished-at="2026-02-03T15:36:13 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="manageNews()[pri:0, instance:testScripts.manageNewsPageTest@1040be71]" started-at="2026-02-03T15:36:13 IST" name="manageNews" finished-at="2026-02-03T15:36:17 IST" duration-ms="4065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageNews -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.manageNewsPageTest@1040be71]" started-at="2026-02-03T15:36:17 IST" name="browserQuit" finished-at="2026-02-03T15:36:17 IST" duration-ms="308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageNews status=SUCCESS method=manageNewsPageTest.manageNews()[pri:0, instance:testScripts.manageNewsPageTest@1040be71] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.manageNewsPageTest -->
+      <class name="testScripts.loginTestCasrPageFact">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:35 IST" name="brwsrInit" finished-at="2026-02-03T15:35:47 IST" duration-ms="12573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:47 IST" name="setUp" finished-at="2026-02-03T15:35:47 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:47 IST" name="invalidLogin" finished-at="2026-02-03T15:35:48 IST" duration-ms="448" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Stream Closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Stream Closed
+at java.base/java.io.FileInputStream.available0(Native Method)
+at java.base/java.io.FileInputStream.available(FileInputStream.java:322)
+at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:182)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:627)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:1146)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:1098)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:1028)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:78)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:271)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:216)
+at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.<init>(ZipArchiveFakeEntry.java:83)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:98)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:157)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:313)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:287)
+at constants.excelUtil.getStringData(excelUtil.java:22)
+at testScripts.loginTestCasrPageFact.invalidLogin(loginTestCasrPageFact.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:48 IST" name="browserQuit" finished-at="2026-02-03T15:35:48 IST" duration-ms="591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin status=FAILURE method=loginTestCasrPageFact.invalidLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:48 IST" name="brwsrInit" finished-at="2026-02-03T15:35:51 IST" duration-ms="2950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:51 IST" name="setUp" finished-at="2026-02-03T15:35:51 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nocredLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:51 IST" name="nocredLogin" finished-at="2026-02-03T15:35:53 IST" duration-ms="1583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nocredLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:53 IST" name="browserQuit" finished-at="2026-02-03T15:35:53 IST" duration-ms="418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=nocredLogin status=SUCCESS method=loginTestCasrPageFact.nocredLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:53 IST" name="brwsrInit" finished-at="2026-02-03T15:35:58 IST" duration-ms="4135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:58 IST" name="setUp" finished-at="2026-02-03T15:35:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nopasswdLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:58 IST" name="nopasswdLogin" finished-at="2026-02-03T15:35:58 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nopasswdLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:58 IST" name="browserQuit" finished-at="2026-02-03T15:35:58 IST" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=nopasswdLogin status=SUCCESS method=loginTestCasrPageFact.nopasswdLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:35:58 IST" name="brwsrInit" finished-at="2026-02-03T15:36:01 IST" duration-ms="2865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:36:01 IST" name="setUp" finished-at="2026-02-03T15:36:01 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nousernameLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:36:01 IST" name="nousernameLogin" finished-at="2026-02-03T15:36:02 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nousernameLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:36:02 IST" name="browserQuit" finished-at="2026-02-03T15:36:02 IST" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=nousernameLogin status=SUCCESS method=loginTestCasrPageFact.nousernameLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:36:02 IST" name="brwsrInit" finished-at="2026-02-03T15:36:06 IST" duration-ms="3532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:36:06 IST" name="setUp" finished-at="2026-02-03T15:36:06 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:36:06 IST" name="validLogin" finished-at="2026-02-03T15:36:07 IST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@75437611]" started-at="2026-02-03T15:36:07 IST" name="browserQuit" finished-at="2026-02-03T15:36:07 IST" duration-ms="290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=loginTestCasrPageFact.validLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@75437611] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.loginTestCasrPageFact -->
+      <class name="testScripts.ManageContactTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.ManageContactTest@433defed]" started-at="2026-02-03T15:36:24 IST" name="brwsrInit" finished-at="2026-02-03T15:36:30 IST" duration-ms="5322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.ManageContactTest@433defed]" started-at="2026-02-03T15:36:30 IST" name="setUp" finished-at="2026-02-03T15:36:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="manageCategory()[pri:0, instance:testScripts.ManageContactTest@433defed]" started-at="2026-02-03T15:36:30 IST" name="manageCategory" finished-at="2026-02-03T15:36:34 IST" duration-ms="3974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageCategory -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageContactTest@433defed]" started-at="2026-02-03T15:36:34 IST" name="browserQuit" finished-at="2026-02-03T15:36:34 IST" duration-ms="452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageCategory status=SUCCESS method=ManageContactTest.manageCategory()[pri:0, instance:testScripts.ManageContactTest@433defed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.ManageContactTest -->
+      <class name="testScripts.ManageCategoryTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.ManageCategoryTest@2a693f59]" started-at="2026-02-03T15:36:34 IST" name="brwsrInit" finished-at="2026-02-03T15:36:37 IST" duration-ms="2770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.ManageCategoryTest@2a693f59]" started-at="2026-02-03T15:36:37 IST" name="setUp" finished-at="2026-02-03T15:36:37 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="manageCategoryTest()[pri:0, instance:testScripts.ManageCategoryTest@2a693f59]" started-at="2026-02-03T15:36:37 IST" name="manageCategoryTest" finished-at="2026-02-03T15:36:56 IST" duration-ms="19198" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'alert-success')]"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5eb6a97f1507153c8c53a02e46e010b4, findElement {using=xpath, value=//div[contains(@class,'alert-success')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55909}, goog:processID: 45232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55909/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb6a97f1507153c8c53a02e46e010b4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'alert-success')]"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5eb6a97f1507153c8c53a02e46e010b4, findElement {using=xpath, value=//div[contains(@class,'alert-success')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55909}, goog:processID: 45232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55909/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb6a97f1507153c8c53a02e46e010b4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+at testScripts.ManageCategoryTest.manageCategoryTest(ManageCategoryTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageCategoryTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageCategoryTest@2a693f59]" started-at="2026-02-03T15:36:56 IST" name="browserQuit" finished-at="2026-02-03T15:36:57 IST" duration-ms="550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageCategoryTest status=FAILURE method=ManageCategoryTest.manageCategoryTest()[pri:0, instance:testScripts.ManageCategoryTest@2a693f59] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.ManageCategoryTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2026-02-03T15:35:35 IST" name="Test2" finished-at="2026-02-03T15:37:13 IST" duration-ms="98741">
+      <class name="testScripts.manageFooterText">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.manageFooterText@5c7933ad]" started-at="2026-02-03T15:36:15 IST" name="brwsrInit" finished-at="2026-02-03T15:36:18 IST" duration-ms="3075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.manageFooterText@5c7933ad]" started-at="2026-02-03T15:36:18 IST" name="setUp" finished-at="2026-02-03T15:36:18 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="manageFooter()[pri:0, instance:testScripts.manageFooterText@5c7933ad]" started-at="2026-02-03T15:36:18 IST" name="manageFooter" finished-at="2026-02-03T15:36:23 IST" duration-ms="4960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageFooter -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.manageFooterText@5c7933ad]" started-at="2026-02-03T15:36:23 IST" name="browserQuit" finished-at="2026-02-03T15:36:23 IST" duration-ms="335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageFooter status=SUCCESS method=manageFooterText.manageFooter()[pri:0, instance:testScripts.manageFooterText@5c7933ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.manageFooterText -->
+      <class name="testScripts.LogoutTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.LogoutTest@4b8d604b]" started-at="2026-02-03T15:37:06 IST" name="brwsrInit" finished-at="2026-02-03T15:37:11 IST" duration-ms="4468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.LogoutTest@4b8d604b]" started-at="2026-02-03T15:37:11 IST" name="setUp" finished-at="2026-02-03T15:37:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoutTest()[pri:0, instance:testScripts.LogoutTest@4b8d604b]" started-at="2026-02-03T15:37:11 IST" name="logoutTest" finished-at="2026-02-03T15:37:13 IST" duration-ms="2239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LogoutTest@4b8d604b]" started-at="2026-02-03T15:37:13 IST" name="browserQuit" finished-at="2026-02-03T15:37:13 IST" duration-ms="421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logoutTest status=SUCCESS method=LogoutTest.logoutTest()[pri:0, instance:testScripts.LogoutTest@4b8d604b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.LogoutTest -->
+      <class name="testScripts.manageNewsPageTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.manageNewsPageTest@790da477]" started-at="2026-02-03T15:36:06 IST" name="brwsrInit" finished-at="2026-02-03T15:36:09 IST" duration-ms="2731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.manageNewsPageTest@790da477]" started-at="2026-02-03T15:36:09 IST" name="setUp" finished-at="2026-02-03T15:36:09 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="manageNews()[pri:0, instance:testScripts.manageNewsPageTest@790da477]" started-at="2026-02-03T15:36:09 IST" name="manageNews" finished-at="2026-02-03T15:36:14 IST" duration-ms="5156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageNews -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.manageNewsPageTest@790da477]" started-at="2026-02-03T15:36:14 IST" name="browserQuit" finished-at="2026-02-03T15:36:15 IST" duration-ms="318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageNews status=SUCCESS method=manageNewsPageTest.manageNews()[pri:0, instance:testScripts.manageNewsPageTest@790da477] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.manageNewsPageTest -->
+      <class name="testScripts.loginTestCasrPageFact">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:35 IST" name="brwsrInit" finished-at="2026-02-03T15:35:47 IST" duration-ms="12557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:47 IST" name="setUp" finished-at="2026-02-03T15:35:47 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:47 IST" name="invalidLogin" finished-at="2026-02-03T15:35:48 IST" duration-ms="340" status="FAIL">
+          <exception class="org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException">
+            <message>
+              <![CDATA[No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:159)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:157)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:313)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:287)
+at constants.excelUtil.getStringData(excelUtil.java:22)
+at testScripts.loginTestCasrPageFact.invalidLogin(loginTestCasrPageFact.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0x441af9a4
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:770)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:150)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:48 IST" name="browserQuit" finished-at="2026-02-03T15:35:48 IST" duration-ms="605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin status=FAILURE method=loginTestCasrPageFact.invalidLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:48 IST" name="brwsrInit" finished-at="2026-02-03T15:35:51 IST" duration-ms="3054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:51 IST" name="setUp" finished-at="2026-02-03T15:35:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nocredLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:51 IST" name="nocredLogin" finished-at="2026-02-03T15:35:53 IST" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nocredLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:53 IST" name="browserQuit" finished-at="2026-02-03T15:35:53 IST" duration-ms="432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=nocredLogin status=SUCCESS method=loginTestCasrPageFact.nocredLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:53 IST" name="brwsrInit" finished-at="2026-02-03T15:35:57 IST" duration-ms="3204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method signature="nopasswdLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:57 IST" name="nopasswdLogin" finished-at="2026-02-03T15:35:57 IST" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nopasswdLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:57 IST" name="setUp" finished-at="2026-02-03T15:35:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:57 IST" name="browserQuit" finished-at="2026-02-03T15:35:58 IST" duration-ms="385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=nopasswdLogin status=SUCCESS method=loginTestCasrPageFact.nopasswdLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:35:58 IST" name="brwsrInit" finished-at="2026-02-03T15:36:00 IST" duration-ms="2647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:36:00 IST" name="setUp" finished-at="2026-02-03T15:36:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nousernameLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:36:00 IST" name="nousernameLogin" finished-at="2026-02-03T15:36:01 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nousernameLogin -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:36:01 IST" name="browserQuit" finished-at="2026-02-03T15:36:01 IST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=nousernameLogin status=SUCCESS method=loginTestCasrPageFact.nousernameLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:36:01 IST" name="brwsrInit" finished-at="2026-02-03T15:36:04 IST" duration-ms="2744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method signature="validLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:36:04 IST" name="validLogin" finished-at="2026-02-03T15:36:06 IST" duration-ms="2233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:36:04 IST" name="setUp" finished-at="2026-02-03T15:36:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33]" started-at="2026-02-03T15:36:06 IST" name="browserQuit" finished-at="2026-02-03T15:36:06 IST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=loginTestCasrPageFact.validLogin()[pri:0, instance:testScripts.loginTestCasrPageFact@5b7a7f33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.loginTestCasrPageFact -->
+      <class name="testScripts.ManageContactTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.ManageContactTest@57bc27f5]" started-at="2026-02-03T15:36:23 IST" name="brwsrInit" finished-at="2026-02-03T15:36:26 IST" duration-ms="3449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method signature="manageCategory()[pri:0, instance:testScripts.ManageContactTest@57bc27f5]" started-at="2026-02-03T15:36:26 IST" name="manageCategory" finished-at="2026-02-03T15:36:32 IST" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageCategory -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.ManageContactTest@57bc27f5]" started-at="2026-02-03T15:36:26 IST" name="setUp" finished-at="2026-02-03T15:36:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageContactTest@57bc27f5]" started-at="2026-02-03T15:36:32 IST" name="browserQuit" finished-at="2026-02-03T15:36:32 IST" duration-ms="454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageCategory status=SUCCESS method=ManageContactTest.manageCategory()[pri:0, instance:testScripts.ManageContactTest@57bc27f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.ManageContactTest -->
+      <class name="testScripts.ManageCategoryTest">
+        <test-method is-config="true" signature="brwsrInit(java.lang.String)[pri:0, instance:testScripts.ManageCategoryTest@5fb759d6]" started-at="2026-02-03T15:36:32 IST" name="brwsrInit" finished-at="2026-02-03T15:36:47 IST" duration-ms="15224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brwsrInit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.ManageCategoryTest@5fb759d6]" started-at="2026-02-03T15:36:47 IST" name="setUp" finished-at="2026-02-03T15:36:47 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="manageCategoryTest()[pri:0, instance:testScripts.ManageCategoryTest@5fb759d6]" started-at="2026-02-03T15:36:47 IST" name="manageCategoryTest" finished-at="2026-02-03T15:37:06 IST" duration-ms="18363" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'alert-success')]"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [540422e27b959d9721df6b14b2fe8a8f, findElement {using=xpath, value=//div[contains(@class,'alert-success')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49980}, goog:processID: 53688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49980/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 540422e27b959d9721df6b14b2fe8a8f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'alert-success')]"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [540422e27b959d9721df6b14b2fe8a8f, findElement {using=xpath, value=//div[contains(@class,'alert-success')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49980}, goog:processID: 53688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49980/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 540422e27b959d9721df6b14b2fe8a8f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+at testScripts.ManageCategoryTest.manageCategoryTest(ManageCategoryTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageCategoryTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageCategoryTest@5fb759d6]" started-at="2026-02-03T15:37:06 IST" name="browserQuit" finished-at="2026-02-03T15:37:06 IST" duration-ms="672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageCategoryTest status=FAILURE method=ManageCategoryTest.manageCategoryTest()[pri:0, instance:testScripts.ManageCategoryTest@5fb759d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScripts.ManageCategoryTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Parallel Test Test -->
+</testng-results>
