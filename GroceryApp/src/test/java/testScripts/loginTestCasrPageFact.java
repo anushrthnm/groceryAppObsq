@@ -19,7 +19,8 @@ public class loginTestCasrPageFact extends baseClassGrocery
 	   login = new loginPageFact(driver);
 	}
 	
-	@Test(dataProvider="loginProvider",description="valid login")
+//	@Test(dataProvider="loginProvider",description="valid login")
+	@Test
 	public void validLogin() throws IOException
 	{
 		String user=excelUtil.getStringData(1, 0, "loginData");

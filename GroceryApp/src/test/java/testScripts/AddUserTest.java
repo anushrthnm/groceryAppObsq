@@ -48,5 +48,10 @@ public class AddUserTest extends baseClassGrocery {
 
 		add.savedata();
 		Assert.assertTrue(news.alertPop().getText().contains("Contact Updated Successfully"));
+		
+		homepg.homeNav();
+		homepg.pageSelect("Admin Users");
+		add.deleteExisting(excelUtil.getStringData(1, 0, "AdminInfo"));
+		Assert.assertTrue(news.alertPop().getText().contains("User Deleted Successfully"));
 	}
 }

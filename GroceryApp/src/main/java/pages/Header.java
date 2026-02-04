@@ -25,8 +25,8 @@ public class Header {
 
 	public void headerDrop() 
 	{
-		 WaitUtility wait =new WaitUtility();
-		   wait.waitForElementToBeClickable(driver,nav);
+		WaitUtility wait =new WaitUtility();
+		wait.waitForElementToBeClickable(driver,nav);
 		nav.click();
 	}
 

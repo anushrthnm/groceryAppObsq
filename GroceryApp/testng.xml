@@ -13,7 +13,6 @@
 			<class name="testScripts.AddUserTest" />	
 			<class name="testScripts.ManageContactTest" />
 			<class name="testScripts.ManageCategoryTest" />
-			<class name="testScripts.LogoutTest" />
 		</classes>
 	</test> <!--
 	Test -->

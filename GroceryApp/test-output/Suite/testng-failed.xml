@@ -15,6 +15,14 @@
           <include name="manageCategoryTest"/>
         </methods>
       </class> <!-- testScripts.ManageCategoryTest -->
+      <class name="testScripts.AddUserTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="addUsers"/>
+          <include name="brwsrInit"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testScripts.AddUserTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
