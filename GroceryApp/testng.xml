@@ -10,6 +10,7 @@
 			<class name="testScripts.loginTestCasrPageFact" />
 			<class name="testScripts.manageNewsPageTest" />
 			<class name="testScripts.manageFooterText" />
+			<class name="testScripts.AddUserTest" />	
 			<class name="testScripts.ManageContactTest" />
 			<class name="testScripts.ManageCategoryTest" />
 			<class name="testScripts.LogoutTest" />

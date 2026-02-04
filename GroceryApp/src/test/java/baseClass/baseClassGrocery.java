@@ -32,6 +32,11 @@ public class baseClassGrocery
     	{
     		prop= new Properties();
     		file= new FileInputStream(ConstClass.Property);
+    		prop.load(file);
+    	}
+    	catch(Exception e)
+    	{
+    		System.out.println(e);
     	}
     	
     	if(browser.equalsIgnoreCase("chrome"))
@@ -50,7 +55,8 @@ public class baseClassGrocery
     	{
     		throw new Exception("Invalid Browser");
     	}
-		driver.get(ConstClass.URL);
+//		driver.get(ConstClass.URL);
+    	driver.get(prop.getProperty("URL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICITWAIT));
 		driver.manage().window().maximize();
 	}
