@@ -3,7 +3,7 @@ package commonUtils;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ExtentUtilities 
+public class ExtendReportUtility 
 {
 	public static final ExtentReports extentReports = new ExtentReports();
 

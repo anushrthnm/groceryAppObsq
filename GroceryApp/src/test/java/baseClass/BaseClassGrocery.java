@@ -14,11 +14,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import commonUtils.ScreenshotUtils;
+import commonUtils.ScreenshotUtility;
 import commonUtils.WaitUtility;
-import constants.ConstClass;
+import constants.ConstantClass;
 
-public class baseClassGrocery 
+public class BaseClassGrocery 
 {
    public WebDriver driver;
    public FileInputStream file;
@@ -31,7 +31,7 @@ public class baseClassGrocery
     	try 
     	{
     		prop= new Properties();
-    		file= new FileInputStream(ConstClass.Property);
+    		file= new FileInputStream(ConstantClass.Property);
     		prop.load(file);
     	}
     	catch(Exception e)
@@ -64,7 +64,7 @@ public class baseClassGrocery
     @AfterMethod
     public void browserQuit(ITestResult iTestResult) throws IOException {
 		if (iTestResult.getStatus() == ITestResult.FAILURE) {
-			ScreenshotUtils scrshot = new ScreenshotUtils();
+			ScreenshotUtility scrshot = new ScreenshotUtility();
 			scrshot.getScreenshot(driver, iTestResult.getName());
 		}
 		driver.quit();

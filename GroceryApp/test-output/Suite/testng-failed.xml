@@ -18,8 +18,8 @@
       <class name="testScripts.AddUserTest">
         <methods>
           <include name="browserQuit"/>
-          <include name="addUsers"/>
           <include name="brwsrInit"/>
+          <include name="addUsers"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testScripts.AddUserTest -->

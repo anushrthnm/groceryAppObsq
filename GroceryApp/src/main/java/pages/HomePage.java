@@ -9,14 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import commonUtils.WaitUtility;
 
-public class homePage 
+public class HomePage 
 {
 	public WebDriver driver;	
 	
 	@FindBy(xpath="//div[contains(@class,'small-box') and contains(normalize-space(),'Manage News')] //a")WebElement manageNews;
 	@FindBy(xpath="//a[contains(text(),'Home')]") WebElement homenav;
 	
-	   public homePage(WebDriver driver) 
+	   public HomePage(WebDriver driver) 
 	   {
 		 this.driver=driver;
 		 PageFactory.initElements(driver, this);

@@ -7,12 +7,12 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import commonUtils.ExtentUtilities;
+import commonUtils.ExtendReportUtility;
 
 public class ListenerClass implements ITestListener
 {
 	ExtentTest test;
-	ExtentReports extent = ExtentUtilities.createExtentReports();
+	ExtentReports extent = ExtendReportUtility.createExtentReports();
 	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	public void onTestStart(ITestResult result) 

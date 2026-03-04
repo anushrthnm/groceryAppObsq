@@ -3,7 +3,7 @@ package commonUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
-public class alertUtil 
+public class AlertUtility 
 {
 	public  void acceptAlert(WebDriver driver) 
 	{

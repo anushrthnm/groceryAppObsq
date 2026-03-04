@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ManageFooter 
+public class ManageFooterPage 
 {
 	public WebDriver driver;
 	
@@ -17,7 +17,7 @@ public class ManageFooter
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext'][normalize-space()='More info']")WebElement alertmessage;
 
 
-	public ManageFooter(WebDriver driver) 
+	public ManageFooterPage(WebDriver driver) 
 	{ 
 		this.driver=driver;
 	    PageFactory.initElements(driver, this);

@@ -11,27 +11,26 @@ import commonUtils.ExcelUtility;
 import pages.ManageFooterPage;
 import pages.HomePage;
 import pages.LoginPage;
-import pages.ManageContactPage;
 import pages.ManageNewsPage;
 
-public class ManageContactTest extends BaseClassGrocery
+public class ManageFooterTextTest extends BaseClassGrocery
 {
 	LoginPage login;
 	HomePage homepg;
+	ManageFooterPage footer;
 	ManageNewsPage news;
-	ManageContactPage contact;
 
 	@BeforeMethod
 	 public void setUp() 
 	{
 	   login = new LoginPage(driver);
 	   homepg=new HomePage(driver);
+	   footer=new ManageFooterPage(driver);
 	   news=new ManageNewsPage(driver);
-	   contact= new ManageContactPage(driver);
 	}
 	
 	@Test
-	public void manageCategory() throws IOException
+	public void manageFooter() throws IOException
 	{
 		String user=ExcelUtility.getStringData(1, 0, "loginData");
 		String password=ExcelUtility.getStringData(1, 1, "loginData");	
@@ -40,11 +39,13 @@ public class ManageContactTest extends BaseClassGrocery
 		login.passwordInput(password);
 		login.signIn();		
 
-		homepg.pageSelect("Manage Contact");
+		homepg.pageSelect("Manage Footer Text");
 		
-		contact.clickonedit();
-		contact.updatePhone(ExcelUtility.getStringData(1, 0, "ContactData"));
-		contact.updatedata();
-		Assert.assertTrue(news.alertPop().getText().contains("Contact Updated Successfully"));
+		footer.editicon();
+		footer.dataFields(ExcelUtility.getStringData(1, 0, "FooterData"), 
+				ExcelUtility.getStringData(1, 1, "FooterData"), 
+				ExcelUtility.getStringData(1, 2, "FooterData"));
+		footer.update();
+		Assert.assertTrue(news.alertPop().getText().contains("Footer Text Updated Successfully"));
 	}
 }

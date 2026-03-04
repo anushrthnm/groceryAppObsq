@@ -6,36 +6,36 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import baseClass.baseClassGrocery;
-import constants.ConstClass;
-import constants.excelUtil;
-import pages.Header;
-import pages.homePage;
-import pages.loginPageFact;
-import pages.manageCategory;
-import pages.manageNewsPage;
+import baseClass.BaseClassGrocery;
+import commonUtils.ExcelUtility;
+import constants.ConstantClass;
+import pages.HeaderPage;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.ManageCategoryPage;
+import pages.ManageNewsPage;
 
-public class LogoutTest extends baseClassGrocery
+public class LogoutTest extends BaseClassGrocery
 {
-	loginPageFact login;
-	homePage homepg;
-	Header head;
-	manageNewsPage news;
+	LoginPage login;
+	HomePage homepg;
+	HeaderPage head;
+	ManageNewsPage news;
 	
 	@BeforeMethod
 	 public void setUp() 
 	{
-	   login = new loginPageFact(driver);
-	   homepg=new homePage(driver);
-	   news=new manageNewsPage(driver);
-       head=new Header(driver);
+	   login = new LoginPage(driver);
+	   homepg=new HomePage(driver);
+	   news=new ManageNewsPage(driver);
+       head=new HeaderPage(driver);
 	}
 	
 	@Test
 	public void logoutTest() throws IOException
 	{
-		String user=excelUtil.getStringData(1, 0, "loginData");
-		String password=excelUtil.getStringData(1, 1, "loginData");	
+		String user=ExcelUtility.getStringData(1, 0, "loginData");
+		String password=ExcelUtility.getStringData(1, 1, "loginData");	
 
 		login.userNameInput(user);
 		login.passwordInput(password);

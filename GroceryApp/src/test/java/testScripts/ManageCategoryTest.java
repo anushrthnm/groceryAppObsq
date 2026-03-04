@@ -5,35 +5,35 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import baseClass.baseClassGrocery;
-import constants.ConstClass;
-import constants.excelUtil;
-import pages.homePage;
-import pages.loginPageFact;
-import pages.manageCategory;
-import pages.manageNewsPage;
+import baseClass.BaseClassGrocery;
+import commonUtils.ExcelUtility;
+import constants.ConstantClass;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.ManageCategoryPage;
+import pages.ManageNewsPage;
 
-public class ManageCategoryTest extends baseClassGrocery
+public class ManageCategoryTest extends BaseClassGrocery
 {
-	loginPageFact login;
-	homePage homepg;
-	manageCategory catgry;
-	manageNewsPage news;
+	LoginPage login;
+	HomePage homepg;
+	ManageCategoryPage catgry;
+	ManageNewsPage news;
 	
 	@BeforeMethod
 	 public void setUp() 
 	{
-	   login = new loginPageFact(driver);
-	   homepg=new homePage(driver);
-	   news=new manageNewsPage(driver);
-	   catgry=new manageCategory(driver);
+	   login = new LoginPage(driver);
+	   homepg=new HomePage(driver);
+	   news=new ManageNewsPage(driver);
+	   catgry=new ManageCategoryPage(driver);
 	}
 	
 	@Test
 	public void manageCategoryTest() throws IOException
 	{
-		String user=excelUtil.getStringData(1, 0, "loginData");
-		String password=excelUtil.getStringData(1, 1, "loginData");	
+		String user=ExcelUtility.getStringData(1, 0, "loginData");
+		String password=ExcelUtility.getStringData(1, 1, "loginData");	
 
 		login.userNameInput(user);
 		login.passwordInput(password);
@@ -42,14 +42,14 @@ public class ManageCategoryTest extends baseClassGrocery
 		homepg.pageSelect("Manage Category");
 		
 		catgry.clickonnew();
-		catgry.adddata(excelUtil.getStringData(1, 0, "CategoryData"));
-		catgry.addfile(ConstClass.ImagePath);
+		catgry.adddata(ExcelUtility.getStringData(1, 0, "CategoryData"));
+		catgry.addfile(ConstantClass.ImagePath);
 		catgry.savedata();
 		Assert.assertTrue(news.alertPop().getText().contains("Category Created Successfully"));
 		
 		homepg.homeNav();
 		homepg.pageSelect("Manage Category");		
-		catgry.deleteExCatgry(excelUtil.getStringData(1, 0, "CategoryData"));
+		catgry.deleteExCatgry(ExcelUtility.getStringData(1, 0, "CategoryData"));
 		Assert.assertTrue(news.alertPop().getText().contains("Category Deleted Successfully"));
 	}
 }

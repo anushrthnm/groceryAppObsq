@@ -20,7 +20,7 @@ public class WaitUtility
    public void WaitForElement(WebDriver driver, WebElement target) 
    {		
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-		        .withTimeout(Duration.ofSeconds(PAGE_LOAD_WAIT))
+		        .withTimeout(Duration.ofSeconds(IMPLICITWAIT))
 		        .pollingEvery(Duration.ofSeconds(PAGE_LOAD_WAIT))
 		        .ignoring(NoSuchElementException.class);
 		fluentWait.until(ExpectedConditions.elementToBeClickable(target));

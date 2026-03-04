@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class loginPageFact 
+public class LoginPage 
 {
 	public WebDriver driver;
 	
@@ -17,7 +17,7 @@ public class loginPageFact
    @FindBy(xpath="//p[contains(text(),'Sign in to start your session')]")WebElement signText;
  
  //div[contains(@class,'alert-danger')]//h5
-   public loginPageFact(WebDriver driver) 
+   public LoginPage(WebDriver driver) 
    {
 	 this.driver=driver;
 	 PageFactory.initElements(driver, this);

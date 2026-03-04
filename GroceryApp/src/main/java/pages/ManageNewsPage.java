@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import commonUtils.WaitUtility;
 
-public class manageNewsPage 
+public class ManageNewsPage 
 {
 	public WebDriver driver;
 	@FindBy(xpath="//h1[normalize-space()='Manage News']")WebElement pageTitle;
@@ -18,7 +18,7 @@ public class manageNewsPage
 	@FindBy(xpath="//div[contains(@class,'alert-success')]")WebElement alersucc;
 	
 	//h1[normalize-space()='Manage News']
-	 public manageNewsPage(WebDriver driver) 
+	 public ManageNewsPage(WebDriver driver) 
 	{
 		 this.driver=driver;
 		 PageFactory.initElements(driver, this);

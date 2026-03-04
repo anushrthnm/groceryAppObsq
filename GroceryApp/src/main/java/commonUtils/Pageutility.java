@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
 
-public class commonUtils 
+public class Pageutility 
 {
 	
 	public void dropdownbyVisibleText(WebDriver driver, WebElement elem,String option)

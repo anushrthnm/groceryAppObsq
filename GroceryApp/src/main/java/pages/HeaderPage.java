@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import commonUtils.WaitUtility;
 
-public class Header {
+public class HeaderPage {
 	public WebDriver driver;
 	@FindBy(xpath = "//a[(@class='nav-link') and @data-toggle='dropdown']")
 	WebElement nav;
@@ -17,7 +17,7 @@ public class Header {
 	@FindBy(xpath = "//div[contains(@class,'dropdown-menu')]//a[contains(@href,'logout')]/preceding-sibling::a[1]")
 	WebElement settings;
 
-	public Header(WebDriver driver) 
+	public HeaderPage(WebDriver driver) 
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

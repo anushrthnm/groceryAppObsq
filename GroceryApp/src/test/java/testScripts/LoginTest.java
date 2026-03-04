@@ -5,26 +5,26 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import baseClass.baseClassGrocery;
-import constants.excelUtil;
-import pages.loginPageFact;
+import baseClass.BaseClassGrocery;
+import commonUtils.ExcelUtility;
+import pages.LoginPage;
 
-public class loginTestCasrPageFact extends baseClassGrocery
+public class LoginTest extends BaseClassGrocery
 {
-	    loginPageFact login;
+	    LoginPage login;
 
 	@BeforeMethod
 	 public void setUp() 
 	{
-	   login = new loginPageFact(driver);
+	   login = new LoginPage(driver);
 	}
 	
 //	@Test(dataProvider="loginProvider",description="valid login")
 	@Test
 	public void validLogin() throws IOException
 	{
-		String user=excelUtil.getStringData(1, 0, "loginData");
-		String password=excelUtil.getStringData(1, 1, "loginData");
+		String user=ExcelUtility.getStringData(1, 0, "loginData");
+		String password=ExcelUtility.getStringData(1, 1, "loginData");
 		
 		login.userNameInput(user);
 		login.passwordInput(password);
@@ -37,8 +37,8 @@ public class loginTestCasrPageFact extends baseClassGrocery
 	@Test
 	public void invalidLogin() throws IOException
 	{
-		String user=excelUtil.getStringData(2, 0, "loginData");
-		String password=excelUtil.getStringData(2, 1, "loginData");
+		String user=ExcelUtility.getStringData(2, 0, "loginData");
+		String password=ExcelUtility.getStringData(2, 1, "loginData");
 		
 		login.userNameInput(user);
 		login.passwordInput(password);
@@ -52,8 +52,8 @@ public class loginTestCasrPageFact extends baseClassGrocery
 	@Test
 	public void nousernameLogin() throws IOException
 	{
-		String user=excelUtil.getStringData(3, 0, "loginData");
-		String password=excelUtil.getStringData(3, 1, "loginData");
+		String user=ExcelUtility.getStringData(3, 0, "loginData");
+		String password=ExcelUtility.getStringData(3, 1, "loginData");
 		
 		login.userNameInput(user);
 		login.passwordInput(password);
@@ -67,8 +67,8 @@ public class loginTestCasrPageFact extends baseClassGrocery
 	@Test
 	public void nopasswdLogin() throws IOException
 	{
-		String user=excelUtil.getStringData(4, 0, "loginData");
-		String password=excelUtil.getStringData(4, 1, "loginData");
+		String user=ExcelUtility.getStringData(4, 0, "loginData");
+		String password=ExcelUtility.getStringData(4, 1, "loginData");
 		
 		login.userNameInput(user);
 		login.passwordInput(password);
@@ -81,8 +81,8 @@ public class loginTestCasrPageFact extends baseClassGrocery
 	@Test
 	public void nocredLogin() throws IOException
 	{
-		String user=excelUtil.getStringData(5, 0, "loginData");
-		String password=excelUtil.getStringData(5, 1, "loginData");
+		String user=ExcelUtility.getStringData(5, 0, "loginData");
+		String password=ExcelUtility.getStringData(5, 1, "loginData");
 		
 		login.userNameInput(user);
 		login.passwordInput(password);

@@ -7,15 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import commonUtils.alertUtil;
-import commonUtils.commonUtils;
-import commonUtils.jsExecutorUtil;
+import commonUtils.AlertUtility;
+import commonUtils.Pageutility;
+import commonUtils.JsExecutorUtility;
 
-public class adminUsers 
+public class AdminUsersPage 
 {
 	public WebDriver driver;
-	jsExecutorUtil js;
-	alertUtil alert;
+	JsExecutorUtility js;
+	AlertUtility alert;
 
 	@FindBy(xpath="//div[@class='small-box bg-info']//child::a[contains(@href,'admin/list-admin')]")WebElement adminmoreinfo;
 	@FindBy(xpath="//a[@onclick='click_button(1)']")WebElement admin_new;
@@ -26,7 +26,7 @@ public class adminUsers
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']//child::h5")WebElement alertmsg;
     @FindBy(xpath="//td[normalize-space()='Hinata']/parent::tr//a[contains(@href,'delete')]")WebElement delUser;
 
-	public adminUsers(WebDriver driver) 
+	public AdminUsersPage(WebDriver driver) 
 	{
 	   this.driver=driver;
 	   PageFactory.initElements(driver, this);
@@ -50,7 +50,7 @@ public class adminUsers
 	
 	public void performdropdown(WebDriver driver,String option)
 	{
-		commonUtils drop=new commonUtils();
+		Pageutility drop=new Pageutility();
 		drop.dropdownbyVisibleText(driver,dropdwn_type,option);
 	}
 	
@@ -61,8 +61,8 @@ public class adminUsers
 	
 	public void deleteExisting(String userName)
 	{
-		js=new jsExecutorUtil();
-		alert=new alertUtil();
+		js=new JsExecutorUtility();
+		alert=new AlertUtility();
 		
 		String xpath = String.format("//table //tbody //tr //td[contains(text(),'%s')]",userName);
 		WebElement user= driver.findElement(By.xpath(xpath));

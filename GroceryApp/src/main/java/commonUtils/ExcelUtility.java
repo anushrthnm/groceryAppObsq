@@ -1,4 +1,4 @@
-package constants;
+package commonUtils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,9 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class excelUtil 
+import constants.ConstantClass;
+
+public class ExcelUtility 
 {
 
 	static FileInputStream dataFile; //excel file 
@@ -18,7 +20,7 @@ public class excelUtil
 	
 	public static String getStringData(int row,int col,String sheet) throws IOException // a is row ,b is column or cell
 	{
-		dataFile=new FileInputStream(ConstClass.testdatafile);
+		dataFile=new FileInputStream(ConstantClass.testdatafile);
 		workbk=new XSSFWorkbook(dataFile);
 		worksheet=workbk.getSheet(sheet);
 		
@@ -38,7 +40,7 @@ public class excelUtil
 	
 	public static String getIntegerData(int row,int col,String sheet) throws IOException 
 	{ 
-		dataFile=new FileInputStream(ConstClass.testdatafile);
+		dataFile=new FileInputStream(ConstantClass.testdatafile);
 		workbk=new XSSFWorkbook(dataFile);
 		worksheet=workbk.getSheet(sheet);
 		

@@ -6,12 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import commonUtils.jsExecutorUtil;
+import commonUtils.JsExecutorUtility;
 
-public class manageContact 
+public class ManageContactPage 
 {
 	public WebDriver driver;
-	jsExecutorUtil js;
+	JsExecutorUtility js;
 
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact'][normalize-space()='More info']")WebElement contactinfo;
 	@FindBy(xpath="//i[@class='fas fa-edit']")WebElement editicon;
@@ -19,7 +19,7 @@ public class manageContact
 	@FindBy(xpath="//button[@name='Update']")WebElement update;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']//child::h5")WebElement alertmsge;
 
-	public manageContact(WebDriver driver) 
+	public ManageContactPage(WebDriver driver) 
 	{
 	   this.driver=driver;
 	   PageFactory.initElements(driver, this);
@@ -38,7 +38,7 @@ public class manageContact
 
 	public void updatedata()
 	{
-		js= new jsExecutorUtil();
+		js= new JsExecutorUtility();
 		js.scrollandClick(driver,update);
 	}
 

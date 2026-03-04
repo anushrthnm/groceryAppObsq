@@ -7,9 +7,9 @@
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="testScripts.loginTestCasrPageFact" />
-			<class name="testScripts.manageNewsPageTest" />
-			<class name="testScripts.manageFooterText" />
+			<class name="testScripts.LoginTest" />
+			<class name="testScripts.ManageNewsPageTest" />
+			<class name="testScripts.ManageFooterTextTest" />
 			<class name="testScripts.AddUserTest" />	
 			<class name="testScripts.ManageContactTest" />
 			<class name="testScripts.ManageCategoryTest" />

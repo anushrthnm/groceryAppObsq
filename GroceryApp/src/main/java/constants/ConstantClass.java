@@ -1,6 +1,6 @@
 package constants;
 
-public class ConstClass 
+public class ConstantClass 
 {
    public static final String testdatafile= System.getProperty("user.dir")+"/src/main/resources/userDataSample.xlsx";
    public static final String URL= "https://groceryapp.uniqassosiates.com/admin/login";

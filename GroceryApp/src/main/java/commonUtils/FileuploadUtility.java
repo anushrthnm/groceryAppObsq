@@ -8,7 +8,7 @@ import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.WebElement;
 
-public class fileUpload 
+public class FileuploadUtility 
 {
 
 	public void withSendKeys(WebElement elemt,String path)
@@ -19,7 +19,7 @@ public class fileUpload
 
 	public void withRobotKeys(WebElement elemt,String path) throws AWTException
 	{
-		StringSelection obj=new StringSelection("C:\\Users\\Admin\\Downloads\\UserManual-Electricity bill.pdf");
+		StringSelection obj=new StringSelection(path);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(obj,null);//pass object of string selection and null
 		Robot r= new Robot();
 		r.delay(2500);

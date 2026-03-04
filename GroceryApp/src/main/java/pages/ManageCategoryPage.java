@@ -6,15 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import commonUtils.alertUtil;
-import commonUtils.fileUpload;
-import commonUtils.jsExecutorUtil;
+import commonUtils.AlertUtility;
+import commonUtils.FileuploadUtility;
+import commonUtils.JsExecutorUtility;
 
-public class manageCategory 
+public class ManageCategoryPage 
 {
 	public WebDriver driver;
-	jsExecutorUtil js;
-	alertUtil alert;
+	JsExecutorUtility js;
+	AlertUtility alert;
 
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category']//i[@class='fas fa-arrow-circle-right']")WebElement categoryinfo;
 	@FindBy(xpath="//a[@onclick='click_button(1)']")WebElement category_new;
@@ -25,7 +25,7 @@ public class manageCategory
 	@FindBy(xpath="//td[normalize-space()='Hinata']/parent::tr//a[contains(@href,'delete')]")WebElement delUser;
 
 
-	public manageCategory(WebDriver driver) 
+	public ManageCategoryPage(WebDriver driver) 
 	{
 	  this.driver=driver;
 	  PageFactory.initElements(driver, this);
@@ -33,7 +33,7 @@ public class manageCategory
 
 	public void categorySelect(String boxName) 
 	{
-		js=new jsExecutorUtil();
+		js=new JsExecutorUtility();
 		String xpath = String.format("//div[contains(@class,'small-box') and contains(normalize-space(),'%s')]//a",
 			        boxName);
 		WebElement catgry= driver.findElement(By.xpath(xpath));
@@ -53,20 +53,20 @@ public class manageCategory
 	
 	public void addfile(String filepath)
 	{
-	  fileUpload fileupload=new fileUpload();
+	  FileuploadUtility fileupload=new FileuploadUtility();
 	  fileupload.withSendKeys(addfile, filepath);
 	}
 	
 	public void savedata()
 	{
-		js=new jsExecutorUtil();
+		js=new JsExecutorUtility();
 		js.scrollandClick(driver, Save);
 	}
 	
 	public void deleteExCatgry(String userName)
 	{
-		js=new jsExecutorUtil();
-		alert=new alertUtil();
+		js=new JsExecutorUtility();
+		alert=new AlertUtility();
 		
 		String xpath = String.format("//table //tbody //tr //td[contains(text(),'%s')]",userName);
 		WebElement user= driver.findElement(By.xpath(xpath));
