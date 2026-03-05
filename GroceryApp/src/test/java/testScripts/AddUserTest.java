@@ -40,6 +40,8 @@ public class AddUserTest extends BaseClassGrocery {
 		login.signIn();
 
 		homepg.pageSelect("Admin Users");
+		
+		add.clearAdmin(driver, ExcelUtility.getStringData(1, 0, "AdminInfo"), ExcelUtility.getStringData(1, 2, "AdminInfo"));
 
 		add.clickonNew();
 
@@ -47,10 +49,11 @@ public class AddUserTest extends BaseClassGrocery {
 		add.performdropdown(driver, ExcelUtility.getStringData(1, 2, "AdminInfo"));
 
 		add.savedata();
-		Assert.assertTrue(news.alertPop().getText().contains("Contact Updated Successfully"));
+		Assert.assertTrue(news.alertPop().getText().contains("User Created Successfully"));
 		
 		homepg.homeNav();
 		homepg.pageSelect("Admin Users");
+		
 		add.deleteExisting(ExcelUtility.getStringData(1, 0, "AdminInfo"));
 		Assert.assertTrue(news.alertPop().getText().contains("User Deleted Successfully"));
 	}

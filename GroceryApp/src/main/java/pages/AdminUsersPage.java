@@ -1,21 +1,24 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import commonUtils.AlertUtility;
 import commonUtils.Pageutility;
-import commonUtils.JsExecutorUtility;
+import commonUtils.WaitUtility;
+import constants.ConstantClass;
+
 
 public class AdminUsersPage 
 {
 	public WebDriver driver;
-	JsExecutorUtility js;
-	AlertUtility alert;
+	Pageutility page;
+	WaitUtility wait;
+	
 
 	@FindBy(xpath="//div[@class='small-box bg-info']//child::a[contains(@href,'admin/list-admin')]")WebElement adminmoreinfo;
 	@FindBy(xpath="//a[@onclick='click_button(1)']")WebElement admin_new;
@@ -25,6 +28,11 @@ public class AdminUsersPage
 	@FindBy(xpath="//select[@name='user_type']")WebElement dropdwn_type;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']//child::h5")WebElement alertmsg;
     @FindBy(xpath="//td[normalize-space()='Hinata']/parent::tr//a[contains(@href,'delete')]")WebElement delUser;
+    @FindBy(xpath="//a[@onclick='click_button(2)']") WebElement admin_search;
+    @FindBy(xpath="//input[@name='un']") WebElement admin_searchField;
+    @FindBy(xpath="//select[@name='ut']")WebElement search_dropdown;
+    @FindBy(xpath="//button[@name='Search']") WebElement admin_searchSubmit;
+    @FindBy(xpath="//i[@class='fas fa-trash-alt']")WebElement delSearchAdmin;
 
 	public AdminUsersPage(WebDriver driver) 
 	{
@@ -61,18 +69,48 @@ public class AdminUsersPage
 	
 	public void deleteExisting(String userName)
 	{
-		js=new JsExecutorUtility();
-		alert=new AlertUtility();
-		
+		page=new Pageutility();
+		wait=new WaitUtility();
 		String xpath = String.format("//table //tbody //tr //td[contains(text(),'%s')]",userName);
 		WebElement user= driver.findElement(By.xpath(xpath));
 		
-		js.scrollIntoView(driver, user);
+		page.scrollIntoView(driver, user);
 		
 		if(user.isDisplayed())
 		{
+			wait.waitForElementToBeClickable(driver,delUser);
+			page.scrollIntoView(driver, delUser);
 			delUser.click();
-			alert.acceptAlert(driver);
+			page.acceptAlert(driver);
 		}
+	}
+	
+	public void clearAdmin(WebDriver driver,String username,String option)
+	{
+		page=new Pageutility();
+		admin_search.click();
+		admin_searchField.sendKeys(username);
+		page.dropdownbyVisibleText(driver,search_dropdown,option);
+		admin_searchSubmit.click();		
+		
+		 String xpath2 = String.format("//table//tbody//tr//td//span//center[contains(text(),'%s')]", ConstantClass.NoResult);
+
+		    List<WebElement> noresult = driver.findElements(By.xpath(xpath2));
+
+		    if(noresult.size() > 0)
+		    {
+		        // RESULT NOT FOUND displayed
+		        System.out.println("No category present");
+		    }
+		    else
+		    {
+		        String xpath = String.format("//table//tbody//tr//td[contains(text(),'%s')]", username);
+		        WebElement user = driver.findElement(By.xpath(xpath));
+
+		        page.scrollIntoView(driver, user);
+		        page.scrollIntoView(driver, delSearchAdmin);
+		        delSearchAdmin.click();
+		        page.acceptAlert(driver);
+		    }
 	}
 }

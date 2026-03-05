@@ -41,6 +41,8 @@ public class ManageCategoryTest extends BaseClassGrocery
 
 		homepg.pageSelect("Manage Category");
 		
+		catgry.clearExisting(ExcelUtility.getStringData(1, 0, "CategoryData"));
+		
 		catgry.clickonnew();
 		catgry.adddata(ExcelUtility.getStringData(1, 0, "CategoryData"));
 		catgry.addfile(ConstantClass.ImagePath);
@@ -48,7 +50,8 @@ public class ManageCategoryTest extends BaseClassGrocery
 		Assert.assertTrue(news.alertPop().getText().contains("Category Created Successfully"));
 		
 		homepg.homeNav();
-		homepg.pageSelect("Manage Category");		
+		homepg.pageSelect("Manage Category");
+		
 		catgry.deleteExCatgry(ExcelUtility.getStringData(1, 0, "CategoryData"));
 		Assert.assertTrue(news.alertPop().getText().contains("Category Deleted Successfully"));
 	}
