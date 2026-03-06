@@ -7,14 +7,6 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testScripts.ManageCategoryTest">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="setUp"/>
-          <include name="brwsrInit"/>
-          <include name="manageCategoryTest"/>
-        </methods>
-      </class> <!-- testScripts.ManageCategoryTest -->
       <class name="testScripts.AddUserTest">
         <methods>
           <include name="browserQuit"/>

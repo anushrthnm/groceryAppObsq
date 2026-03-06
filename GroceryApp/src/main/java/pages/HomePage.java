@@ -22,20 +22,22 @@ public class HomePage
 		 PageFactory.initElements(driver, this);
 	   }
 	   
-	   public void pageSelect(String boxName) 
+	   public HomePage pageSelect(String boxName) 
 	   {
 		   String xpath = String.format("//div[contains(@class,'small-box') and contains(normalize-space(),'%s')]//a",
 			        boxName);
 		   ((JavascriptExecutor) driver)
 	        .executeScript("arguments[0].click();", driver.findElement(By.xpath(xpath)));
+		   return this;
 		    //driver.findElement(By.xpath(xpath)).click();
 		}
 	   
-	   public void manageNewsClick()
+	   public HomePage manageNewsClick()
 	   {
 		   WaitUtility wait =new WaitUtility();
 		   wait.waitForElementToBeClickable(driver,manageNews);
 		   manageNews.click();
+		   return this;
 	   }
 	   
 	   public void homeNav()

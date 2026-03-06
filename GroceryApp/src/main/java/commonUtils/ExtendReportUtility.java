@@ -3,17 +3,19 @@ package commonUtils;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import constants.ConstantClass;
+
 public class ExtendReportUtility 
 {
 	public static final ExtentReports extentReports = new ExtentReports();
 
 	public synchronized static ExtentReports createExtentReports() 
 	{
-		ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
-		reporter.config().setReportName("7RMart  Project");
+		ExtentSparkReporter reporter = new ExtentSparkReporter(ConstantClass.ReportPath);
+		reporter.config().setReportName(ConstantClass.ReportName);
 		extentReports.attachReporter(reporter);
-		extentReports.setSystemInfo("Organization", "Obsqura");
-		extentReports.setSystemInfo("Name", "AA");
+		extentReports.setSystemInfo(ConstantClass.ReportSysInfoOrg,ConstantClass.ReportSysInfoOrgName);
+		extentReports.setSystemInfo(ConstantClass.ReportSysInfoName,ConstantClass.ReportSysInfoNameVal);
 		return extentReports;
 	}
 	
