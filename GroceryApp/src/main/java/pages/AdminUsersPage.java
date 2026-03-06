@@ -45,29 +45,33 @@ public class AdminUsersPage
 	  adminmoreinfo.click();
 	}
 	
-	public void clickonNew()
+	public AdminUsersPage clickonNew()
 	{
 	  admin_new.click();
+	  return this;
 	}
 	
-	public void enterdata(String username,String password)
+	public AdminUsersPage enterdata(String username,String password)
 	{
 	  admin_uname.sendKeys(username);
 	  admin_passwd.sendKeys(password);
+	  return this;
 	}
 	
-	public void performdropdown(WebDriver driver,String option)
+	public AdminUsersPage performdropdown(WebDriver driver,String option)
 	{
 		Pageutility drop=new Pageutility();
 		drop.dropdownbyVisibleText(driver,dropdwn_type,option);
+		return this;
 	}
 	
-	public void savedata() 
+	public AdminUsersPage savedata() 
 	{	 
 	  admin_save.click();
+	  return this;
     }
 	
-	public void deleteExisting(String userName)
+	public AdminUsersPage deleteExisting(String userName)
 	{
 		page=new Pageutility();
 		wait=new WaitUtility();
@@ -83,9 +87,10 @@ public class AdminUsersPage
 			delUser.click();
 			page.acceptAlert(driver);
 		}
+		return this;
 	}
 	
-	public void clearAdmin(WebDriver driver,String username,String option)
+	public AdminUsersPage clearAdmin(WebDriver driver,String username,String option)
 	{
 		page=new Pageutility();
 		admin_search.click();
@@ -112,5 +117,6 @@ public class AdminUsersPage
 		        delSearchAdmin.click();
 		        page.acceptAlert(driver);
 		    }
+		    return this;
 	}
 }

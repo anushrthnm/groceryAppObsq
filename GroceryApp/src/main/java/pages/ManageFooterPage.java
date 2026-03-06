@@ -24,12 +24,13 @@ public class ManageFooterPage
 	}
 
 
-	public void editicon()
+	public ManageFooterPage editicon()
 	{
 		editicon.click();
+		return this;
 	}
 
-    public void dataFields(String addressText,String emailText,String phoneText)
+    public ManageFooterPage dataFields(String addressText,String emailText,String phoneText)
    {
         address.clear();
         address.sendKeys(addressText);
@@ -39,11 +40,13 @@ public class ManageFooterPage
      	
     	phoneno.clear();
     	phoneno.sendKeys(phoneText);
+    	return this;
 	}
 
-	 public void update()
+	 public ManageFooterPage update()
     {
 	    updatebtn.click();
+	    return this;
     }
 	 
 }

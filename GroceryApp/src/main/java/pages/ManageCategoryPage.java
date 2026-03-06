@@ -37,18 +37,20 @@ public class ManageCategoryPage
 	  PageFactory.initElements(driver, this);
 	}
 
-	public void categorySelect(String boxName) 
+	public ManageCategoryPage categorySelect(String boxName) 
 	{
 		page=new Pageutility();
 		String xpath = String.format("//div[contains(@class,'small-box') and contains(normalize-space(),'%s')]//a",
 			        boxName);
 		WebElement catgry= driver.findElement(By.xpath(xpath));
-		page.scrollandClick(driver, catgry);  
+		page.scrollandClick(driver, catgry);
+		return this;
 	}
 
-	public void clickonnew()
+	public ManageCategoryPage clickonnew()
 	{
 	  category_new.click();
+	  return this;
 	}
 	
 	public void clearExisting(String catName)

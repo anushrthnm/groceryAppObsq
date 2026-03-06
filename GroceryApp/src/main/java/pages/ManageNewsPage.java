@@ -30,24 +30,28 @@ public class ManageNewsPage
 		  return page;
 	 }
 	 
-	  public void addNews()
+	  public ManageNewsPage addNews()
 	  {
-		  news.click();	  
+		  news.click();
+		  return this;
 	  }
 	  
-	  public void enterNews(String news)
+	  public ManageNewsPage enterNews(String news)
 	  {
 		  newstext.sendKeys(news);
+		  return this;
 	  }
 	  
-	  public void submitNews()
+	  public ManageNewsPage submitNews()
 	  {
-		  submit.click();	  
+		  submit.click();
+		  return this;
 	  }
 	  
-	  public void cancelButton()
+	  public ManageNewsPage cancelButton()
 	  {
-		  cancel.click();	  
+		  cancel.click();
+		  return this;
 	  }
 	  
 	  public WebElement alertPop()

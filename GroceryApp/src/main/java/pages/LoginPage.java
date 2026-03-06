@@ -23,19 +23,22 @@ public class LoginPage
 	 PageFactory.initElements(driver, this);
    }
    
-   public void userNameInput(String user2)
+   public LoginPage userNameInput(String user2)
    {
 	   user.sendKeys(user2);
+	   return this;
    }
    
-   public void passwordInput(String password)
+   public LoginPage passwordInput(String password)
    {
 	   passwd.sendKeys(password);
+	   return this;
    }
    
-   public void signIn()
+   public LoginPage signIn()
    {
 	   signin.click();
+	   return this;
    }
    
    public boolean homepageCheck()

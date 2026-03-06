@@ -25,21 +25,24 @@ public class ManageContactPage
 	   PageFactory.initElements(driver, this);
 	}
 
-	public void clickonedit()
+	public ManageContactPage clickonedit()
 	{
 	   editicon.click();
+	   return this;
 	}
 
-	public void updatePhone(String phoneText)
+	public ManageContactPage updatePhone(String phoneText)
 	{
 	    phone.clear();
 	    phone.sendKeys(phoneText);
+	    return this;
 	}
 
-	public void updatedata()
+	public ManageContactPage updatedata()
 	{
 		page= new Pageutility();
 		page.scrollandClick(driver,update);
+		return this;
 	}
 
 }
